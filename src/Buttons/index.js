@@ -1,6 +1,6 @@
 import "./style.css";
 
-const Buttons = ({ tasks, hideDoneTasks, toggleHideDone }) => (
+const Buttons = ({ tasks, hideDoneTasks, toggleHideDone, markAllDone }) => (
     <div className="buttons">
         {tasks.length > 0 && (
             <>
@@ -12,6 +12,7 @@ const Buttons = ({ tasks, hideDoneTasks, toggleHideDone }) => (
                     {hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone
                 </button>
                 <button
+                    onClick={markAllDone}
                     className="buttons__button"
                     disabled={tasks.every(({ done }) => done)}
                 >
