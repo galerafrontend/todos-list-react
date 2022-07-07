@@ -32,7 +32,7 @@ function App() {
   };
 
   const markAllDone = () => {
-    setTasks(tasks => tasks.map(task => ({ ...task, done: true })))
+    setTasks(tasks => tasks.map(task => ({ ...task, done: true })));
   };
 
   return (
