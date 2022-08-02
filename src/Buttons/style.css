@@ -27,4 +27,5 @@
 .buttons__button:disabled {
     color: #ddd;
     border: none;
+    cursor: auto;
 }
