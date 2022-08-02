@@ -9,6 +9,7 @@
 
 .form__formField {
     border: 2px solid #ddd;
+    padding: 10px;
 }
 
 @media (max-width:768px) {
