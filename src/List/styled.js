@@ -41,7 +41,7 @@ export const Button = styled.button`
 
 		&:hover {
 			cursor: pointer;
-    		background-color: hsl(120, 100%, 35%);
+    	background-color: hsl(120, 100%, 35%);
 		}
 
 		&:active {
@@ -54,7 +54,7 @@ export const Button = styled.button`
 
 		&:hover {
 			cursor: pointer;
-    		background-color: hsl(348, 83%, 55%);
+    	background-color: hsl(348, 83%, 55%);
 		}
 
 		&:active {
