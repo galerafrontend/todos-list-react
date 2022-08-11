@@ -25,7 +25,7 @@ The second, when clicked, sets all tasks as completed, then it is turned off unt
 
 5. An example of project's operation has been presented on the GIF.
 
-![To-do-list-react-gif](How_it_works_todos_list.gif)
+![To-do-list-react-gif](How_it_works_toDoList.gif)
 
 ## Technologies/Conventions I used
 Project is created with:
