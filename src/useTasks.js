@@ -39,5 +39,5 @@ export const useTasks = () => {
     ])
   }
 
-  return { tasks, removeTask, toggleTaskDone, markAllDone, addNewTask }
+  return { tasks, removeTask, toggleTaskDone, markAllDone, addNewTask };
 };
