@@ -25,13 +25,8 @@ function App() {
       />
       <Section
         title="Lista zadań"
-        body={
-          <List
-            removeTask={removeTask}
-          />}
-        extraHeaderContent={
-          <Buttons />
-        }
+        body={<List />}
+        extraHeaderContent={<Buttons />}
       />
     </Container>
   );
