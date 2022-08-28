@@ -8,24 +8,27 @@ export const ButtonsContainer = styled.div`
 export const Button = styled.button`
   border: none;
   background-color: transparent;
-  color: teal;
+  color: ${({ theme }) => theme.color.teal};
   transition: 0.3s;
   font-size: 17px;
   margin: 0 0 0 20px;
+  cursor: pointer;
 
-  @media(max-width: 768px) {
+  @media(max-width: ${({ theme }) => theme.breakpoint.mobileMAxF}) {
     flex-basis: 100%;
     padding: 20px;
   }
 
-  ${({disabled}) => disabled && css`
-    color: #ddd;
-    border: none;
-    cursor: auto;
-  `}
-
   &:hover {
-    cursor: pointer;
     color: hsl(180, 100%, 35%);
+  }
+
+  &:active {
+    color: hsl(180, 100%, 45%);
+  }
+
+  &:disabled {
+    color: ${({ theme }) => theme.color.alto};
+    cursor: auto;
   }
 `;

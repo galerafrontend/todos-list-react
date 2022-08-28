@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const MainSection = styled.section`
-  background-color: white;
+  background: ${({ theme }) => theme.color.white};
 `;
 
 export const Header = styled.header`
@@ -13,7 +13,7 @@ export const Header = styled.header`
   border-bottom: 2px solid #ddd;
   padding: 20px;
 
-  @media(max-width: 768px) {
+  @media(max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
     grid-template-columns: 1fr;
   }
 `;

@@ -8,20 +8,20 @@ export const FormField = styled.form`
   padding-bottom: 20px;
   padding-top: 5px;
 
-  @media (max-width:768px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}) {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
   }
 `;
 
 export const Input = styled.input`
-  border: 2px solid #ddd;
+  border: 2px solid ${({ theme }) => theme.color.alto};
   padding: 10px;
 `;
 
 export const Button = styled.button`
-  color: white;
-  background-color: teal;
+  color: ${({ theme }) => theme.color.white};
+  background-color: ${({ theme }) => theme.color.teal};
   border: none;
   padding: 10px;
   border-radius: 3px;
@@ -29,11 +29,11 @@ export const Button = styled.button`
 
   &:hover {
     cursor: pointer;
-    background-color: hsl(180, 100%, 35%);
+    filter: brightness(130%);
     transform: scaleY(1.05) scaleX(1.05);
   }
 
   &:active {
-    background-color: hsl(180, 100%, 40%);
+    filter: brightness(140%);
   }
 `;
