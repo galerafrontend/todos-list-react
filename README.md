@@ -29,10 +29,10 @@ The second, when clicked, sets all tasks as completed, then it is turned off unt
 
 ## Technologies/Conventions I used
 Project is created with:
-- BEM
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+-  project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- React hooks
+- React-redux
+- styledComponents
 ## Available Scripts
 
 In the project directory, you can run:
