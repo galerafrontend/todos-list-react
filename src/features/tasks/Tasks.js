@@ -6,7 +6,6 @@ import Header from "../../common/Header";
 import { Container } from "./styled";
 import { useTasks } from "../../useTasks";
 
-
 function App() {
 
   const {
@@ -29,12 +28,9 @@ function App() {
         body={
           <List
             removeTask={removeTask}
-            toggleTaskDone={toggleTaskDone}
           />}
         extraHeaderContent={
-          <Buttons
-            markAllDone={markAllDone}
-          />
+          <Buttons />
         }
       />
     </Container>
