@@ -18,9 +18,9 @@ const tasksSlice = createSlice({
       tasks[index].done = !tasks[index].done;
     },
     markAllDone: ({ tasks }) => {
-      for (const task of tasks) {
+      tasks.forEach(task => {
         task.done = true;
-      }
+      });
     },
   },
 });
