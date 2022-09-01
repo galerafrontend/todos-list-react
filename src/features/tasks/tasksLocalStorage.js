@@ -1,7 +1,9 @@
-const loacalStorageKey = "tasks";
+const localStorageKey = "tasks";
 
 export const saveTasksInLoacalStorage = tasks =>
-  localStorage.setItem(loacalStorageKey, JSON.stringify(tasks));
+  localStorage.setItem(localStorageKey, JSON.stringify(tasks));
 
 export const getTasksFromLocalStorage = () =>
-  JSON.parse(localStorage.getItem(loacalStorageKey)) || [];
+  JSON.parse(localStorage.getItem(localStorageKey)) || [];
+
+  

@@ -2,20 +2,20 @@ import { takeLatest, call, put, delay, takeEvery, select } from "redux-saga/effe
 import { getExampleTasks } from "./getExampleTasks";
 import { saveTasksInLoacalStorage } from "./tasksLocalStorage";
 import {
-  downloadExampleTasks,
-  downloadExampleTasksPending,
-  downloadExampleTasksError,
+  downloadTasks,
+  downloadTasksPending,
+  downloadTasksError,
   selectTasks
 } from "./tasksSlice";
 
-function* watchDownloadExampleTasksHandler() {
+function* watchDownloadTasksHandler() {
   try {
     yield delay(1000);
     const exampleTasks = yield call(getExampleTasks);
-    yield put(downloadExampleTasksPending(exampleTasks));
+    yield put(downloadTasksPending(exampleTasks));
   } catch (error) {
     yield call(alert, "Upss... Coś poszło nie tak")
-    yield put(downloadExampleTasksError());
+    yield put(downloadTasksError());
   }
 }
 
@@ -25,6 +25,6 @@ function* saveTasksInLoacalStorageHandler() {
 }
 
 export function* tasksSaga() {
-  yield takeLatest(downloadExampleTasks.type, watchDownloadExampleTasksHandler);
+  yield takeLatest(downloadTasks.type, watchDownloadTasksHandler);
   yield takeEvery("*", saveTasksInLoacalStorageHandler);
 }

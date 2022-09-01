@@ -1,5 +1,5 @@
 import { ButtonsContainer, Button } from "../Buttons/styled";
-import { downloadExampleTasks, selectLoad } from "../tasksSlice";
+import { downloadTasks, selectLoad } from "../tasksSlice";
 import { useDispatch, useSelector } from "react-redux/es/exports";
 
 const SpecialButton = () => {
@@ -8,7 +8,7 @@ const SpecialButton = () => {
   return (
     <ButtonsContainer>
       <Button
-        onClick={() => dispatch(downloadExampleTasks())}
+        onClick={() => dispatch(downloadTasks())}
         disabled={isPending}
       >
         {!isPending ? "Pobierz przykładowe zadania" : "Ładowanie..." }
