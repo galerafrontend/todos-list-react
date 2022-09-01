@@ -26,6 +26,16 @@ const tasksSlice = createSlice({
       const index = tasks.findIndex(({ id }) => id === payload)
       tasks.splice(index, 1);
     },
+    downloadExampleTasksError: state => {
+      state.loading = false;
+    },
+    downloadExampleTasksPending: (state, { payload: exampleTasks }) => {
+      state.tasks = exampleTasks;
+      state.loading = false;
+    },
+    downloadExampleTasks: state => {
+      state.loading = true;
+    },
   },
 });
 
@@ -34,7 +44,12 @@ export const {
   toggleHideDone,
   toggleTaskDone,
   markAllDone,
-  removeTask
+  removeTask,
+  downloadExampleTasks,
+  downloadExampleTasksError,
+  downloadExampleTasksPending
 } = tasksSlice.actions;
+
 export const selectTasks = state => state.tasks;
+export const selectLoad = state => selectTasks(state).loading;
 export default tasksSlice.reducer;
