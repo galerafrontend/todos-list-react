@@ -7,14 +7,14 @@ const tasksSlice = createSlice({
     hideDoneTasks: false,
   },
   reducers: {
-    addTask: ({ tasks }, { payload }) => {
-      tasks.push(payload);
+    addTask: ({ tasks }, { payload: task }) => {
+      tasks.push(task);
     },
     toggleHideDone: state => {
       state.hideDoneTasks = !state.hideDoneTasks;
     },
-    toggleTaskDone: ({ tasks }, { payload }) => {
-      const index = tasks.findIndex(({ id }) => id === payload);
+    toggleTaskDone: ({ tasks }, { payload: taskId }) => {
+      const index = tasks.findIndex(({ id }) => id === taskId);
       tasks[index].done = !tasks[index].done;
     },
     markAllDone: ({ tasks }) => {
@@ -22,8 +22,8 @@ const tasksSlice = createSlice({
         task.done = true;
       });
     },
-    removeTask: ({ tasks }, { payload }) => {
-      const index = tasks.findIndex(({ id }) => id === payload)
+    removeTask: ({ tasks }, { payload: taskId }) => {
+      const index = tasks.findIndex(({ id }) => id === taskId)
       tasks.splice(index, 1);
     },
     downloadExampleTasksError: state => {
@@ -50,6 +50,12 @@ export const {
   downloadExampleTasksPending
 } = tasksSlice.actions;
 
-export const selectTasks = state => state.tasks;
+const selectTasksState = state => state.tasks;
+
+export const selectTasks = state => selectTasksState(state).tasks;
+export const selectHideDone = state => selectTasksState(state).hideDoneTasks;
+export const selectAreTasksEmpty = state => selectTasks(state).lenght > 0;
+export const selectIsEveryTaskDone = state => selectTasks(state).every(({ done }) => done);
+export const selectIsAnyTaskDone = state => selectTasks(state).every(({ done }) => !done);
 export const selectLoad = state => selectTasks(state).loading;
 export default tasksSlice.reducer;
