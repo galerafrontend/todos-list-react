@@ -1,6 +1,7 @@
 import Form from "./Form";
 import List from "./List";
 import Buttons from "./Buttons";
+import SpecialButton from "./SpecialButton";
 import Section from "../../common/Section";
 import Header from "../../common/Header";
 import { Container } from "./styled";
@@ -12,6 +13,7 @@ function App() {
       <Section
         title="Dodaj nowe zadanie"
         body={<Form />}
+        extraHeaderContent={<SpecialButton />}
       />
       <Section
         title="Lista zadań"
