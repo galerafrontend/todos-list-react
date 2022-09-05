@@ -1,5 +1,5 @@
 import { ButtonsContainer, Button } from "../Buttons/styled";
-import { downloadTasks, selectLoad } from "../tasksSlice";
+import { downloadTasks, selectLoad } from "../../tasksSlice";
 import { useDispatch, useSelector } from "react-redux/es/exports";
 
 const SpecialButton = () => {

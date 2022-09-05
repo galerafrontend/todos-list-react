@@ -2,11 +2,11 @@ import Form from "./Form";
 import List from "./List";
 import Buttons from "./Buttons";
 import SpecialButton from "./SpecialButton";
-import Section from "../../common/Section";
-import Header from "../../common/Header";
-import { Container } from "./styled";
+import Section from "../../../common/Section";
+import Header from "../../../common/Header";
+import { Container } from "../styled";
 
-function App() {
+function TasksPage() {
   return (
     <Container>
       <Header title="Lista zadań" />
@@ -24,4 +24,4 @@ function App() {
   );
 }
 
-export default App;
+export default TasksPage;
