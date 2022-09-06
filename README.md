@@ -13,25 +13,38 @@ https://eltair41.github.io/todos-list-react/
 ## General info
 Project is a simple example of to do list. It allows to create list of tasks and manipulated it freely. Project is easy and fun to use.
 ## How it works?
-1. At first, enter any task in a text field and then press the add task button.
-As you can see the new task has been added to the list and the focus is automatically set in text field.
+1. Welcome on To Do List 😁. 
+To use the list of tasks, click Task list on the navigation bar, or if you are interested in the author, click About author.
 
-2. Now you can add another task or if the current task has been completed, press green button. Completed task will be crossed out. Of course you can reverse the process by pressing the green button again.
+2. Enter any task in a text field and then press the add task button.
+As you can see the new task has been added to the list and the focus is automatically set in text field. You can also add exaple tasks, for this you need to press the "Download example tasks" button and wait a few seconds. The tasks will be downloaded and automatically placed on the task list.
 
-3. A completed task can also be completly removed from the list. To do this, press the red button with a wastebasket icon.
+    Warning - (remember that, downloaded tasks will replace the current task list and cancel all interactions related to it)
 
-4. You can use two special buttons as well. The first one turns on when at least one of the tasks has been completed, then the button can be used to hide or show completed tasks.
+3. Now you can add another task or if the current task has been completed, press green button. Completed task will be crossed out. Of course you can reverse the process by pressing the green button again.
+
+4. A completed task can also be completly removed from the list. To do this, press the red button with a wastebasket icon.
+
+5. You can use two special buttons as well. The first one turns on when at least one of the tasks has been completed, then the button can be used to hide or show completed tasks.
 The second, when clicked, sets all tasks as completed, then it is turned off until there is one incomplete task.
 
-5. An example of project's operation has been presented on the GIF.
+6. Use the search engine to filter your tasks. If necessary, just enter the beginning of the search phrase.
 
-![To-do-list-react-gif](How_it_works_toDoList.gif)
+7. If you interested in details of any of the tasks, just click on the task you are interested in and you will be taken to the task details subpage.
+
+8. An example of project's operation has been presented on the GIF.
+
+![To-do-list-react-gif](How_it_works_TDL.gif)
 
 ## Technologies/Conventions I used
 Project is created with:
 -  project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 - React hooks
 - React-redux
+- Redux-Saga
+- React-Router
+- axios
+- Custom hooks
 - styledComponents
 ## Available Scripts
 
