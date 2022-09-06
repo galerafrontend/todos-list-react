@@ -3,11 +3,15 @@ import TaskPage from "./features/tasks/TaskPage";
 import AuthorPage from "./features/author/AuthorPage";
 import { HashRouter, Route, Switch, Redirect } from "react-router-dom";
 import { StyledNavLink, NavList, NavListItem } from "./styled";
+import HomePage from "./features/home/HomePage";
 
 const App = () => (
   <HashRouter>
     <nav>
       <NavList>
+        <NavListItem>
+          <StyledNavLink to="/strona glowna">Strona główna</StyledNavLink>
+        </NavListItem>
         <NavListItem>
           <StyledNavLink to="/lista zadan">Lista zadań</StyledNavLink>
         </NavListItem>
@@ -19,6 +23,9 @@ const App = () => (
         <Route path="/lista zadan/:id">
           <TaskPage />
         </Route>
+        <Route path="/strona glowna">
+          <HomePage />
+        </Route>
         <Route path="/lista zadan">
           <TasksPage />
         </Route>
@@ -26,7 +33,7 @@ const App = () => (
           <AuthorPage />
         </Route>
         <Route path="/">
-          <Redirect to="/lista zadan" />
+          <Redirect to="/strona glowna" />
         </Route>
       </Switch>
     </nav>

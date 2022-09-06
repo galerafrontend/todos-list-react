@@ -13,7 +13,7 @@ export const StyledNavLink = styled(NavLink)`
 export const NavList = styled.ul`
   background: ${({ theme }) => theme.color.teal};
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto;
   justify-content: center;
   align-items: center;
   list-style-type: none;
