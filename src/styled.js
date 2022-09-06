@@ -26,5 +26,5 @@ export const NavList = styled.ul`
 `;
 
 export const NavListItem = styled.li`
-padding: 15px;
+  padding: 15px;
 `;
