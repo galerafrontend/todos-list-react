@@ -20,7 +20,7 @@ export const Paragraph = styled.p`
   font-weight: 700;
   font-size: 50px;
   border-radius: 70px;
-  font-family: 'Antic Slab', serif;
+  font-family: 'Montserrat', sans-serif;
 
   @media(max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
     flex-basis: 500px;
