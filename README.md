@@ -42,6 +42,7 @@ Project is created with:
 - React hooks
 - React-redux
 - Redux-Saga
+- reduxjs/toolkit
 - React-Router
 - axios
 - Custom hooks
