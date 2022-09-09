@@ -5,6 +5,7 @@ import { Tasks, Item, Content, Button, StyledLink } from "./styled";
 import { useLocation } from "react-router-dom";
 import searchQueryParamName from "../searchQueryParamName";
 import { useQueryParameter } from "../Search/queryParameters";
+import { toTask } from "../../../../routes";
 
 const List = () => {
 	const location = useLocation();
@@ -27,7 +28,7 @@ const List = () => {
 						{task.done ? "✔" : ""}
 					</Button>
 					<Content done={task.done}>
-						<StyledLink to={`/lista zadan/${task.id}`}>
+						<StyledLink to={toTask({ id: task.id })}>
 							{task.content}
 						</StyledLink>
 					</Content>
