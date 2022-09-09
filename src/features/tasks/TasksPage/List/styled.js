@@ -58,4 +58,8 @@ export const Button = styled.button`
 export const StyledLink = styled(Link)`
 	color: ${({theme}) => theme.color.teal};
 	text-decoration: none;
+
+	&:hover {
+		border-bottom: 2px solid;
+	}
 `; 
