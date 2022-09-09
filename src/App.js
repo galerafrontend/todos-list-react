@@ -4,26 +4,27 @@ import AuthorPage from "./features/author/AuthorPage";
 import HomePage from "./features/home/HomePage";
 import { HashRouter, Route, Switch, Redirect } from "react-router-dom";
 import Navigation from "./Navigation";
+import { toAuthor, toHome, toTask, toTasks } from "./routes";
 
 const App = () => (
   <HashRouter>
     <Navigation />
 
     <Switch>
-      <Route path="/lista zadan/:id">
+      <Route path={toTask()}>
         <TaskPage />
       </Route>
-      <Route path="/strona glowna">
+      <Route path={toHome()}>
         <HomePage />
       </Route>
-      <Route path="/lista zadan">
+      <Route path={toTasks()}>
         <TasksPage />
       </Route>
-      <Route path="/autor">
+      <Route path={toAuthor()}>
         <AuthorPage />
       </Route>
-      <Route path="/">
-        <Redirect to="/strona glowna" />
+      <Route>
+        <Redirect to={toHome()} />
       </Route>
     </Switch>
   </HashRouter>
