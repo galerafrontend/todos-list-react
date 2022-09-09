@@ -18,7 +18,7 @@ export const Paragraph = styled.p`
   padding: 100px;
   background: ${({theme}) => theme.color.white};
   font-weight: 700;
-  font-size: 50px;
+  font-size: 45px;
   border-radius: 70px;
   font-family: 'Montserrat', sans-serif;
 
