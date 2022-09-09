@@ -5,6 +5,10 @@ export const StyledNavLink = styled(NavLink)`
   color: ${({ theme }) => theme.color.white};
   text-decoration: none;
 
+  &:hover {
+    border-bottom: 2px solid;
+  }
+
   &.active {
     font-weight: 700;
   }
