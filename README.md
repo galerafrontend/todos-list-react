@@ -8,7 +8,7 @@
 - [Available Scripts](#available-scripts)
 
 ## Demo
-https://eltair41.github.io/todos-list-react/
+https://galerafrontend.github.io/todos-list-react/
 
 ## General info
 Project is a simple example of to do list. It allows to create list of tasks and manipulated it freely. Project is easy and fun to use.
