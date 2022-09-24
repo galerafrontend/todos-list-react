@@ -11,7 +11,7 @@ const SpecialButton = () => {
         onClick={() => dispatch(downloadTasks())}
         disabled={isPending}
       >
-        {!isPending ? "Pobierz przykładowe zadania" : "Ładowanie..." }
+        {!isPending ? "Download example tasks" : "Loading..." }
       </Button>
     </ButtonsContainer>
   );
