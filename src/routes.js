@@ -1,5 +1,5 @@
-export const toTasks = () => "/lista zadan";
-export const toAuthor = () => "/autor";
-export const toHome = () => "/strona glowna";
+export const toTasks = () => "/to-do list";
+export const toAuthor = () => "/authot";
+export const toHome = () => "/home";
 
-export const toTask = ({ id } = { id: ":id" }) => `/lista zadan/${id}`;
+export const toTask = ({ id } = { id: ":id" }) => `/to-do list/${id}`;

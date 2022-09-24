@@ -10,18 +10,18 @@ import { Container } from "../styled";
 function TasksPage() {
   return (
     <Container>
-      <Header title="Lista zadań" />
+      <Header title="To-do list" />
       <Section
-        title="Dodaj nowe zadanie"
+        title="Add new task"
         body={<Form />}
         extraHeaderContent={<SpecialButton />}
       />
       <Section
-        title="Szukaj zadania"
+        title="Search task"
         body={<Search />}
       />
       <Section
-        title="Lista zadań"
+        title="To-do list"
         body={<List />}
         extraHeaderContent={<Buttons />}
       />

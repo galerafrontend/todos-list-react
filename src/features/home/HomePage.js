@@ -4,7 +4,7 @@ const HomePage = () => {
   return (
     <Wrapper>
       <Paragraph>
-        Co jest dziś do zrobienia? 😁
+        What needs to be done today? 😁
       </Paragraph>
     </Wrapper>
   )

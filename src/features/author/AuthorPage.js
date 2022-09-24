@@ -5,26 +5,26 @@ import { Content } from "../tasks/TaskPage/styled";
 
 const AuthorPage = () => (
   <Container>
-    <Header title="O autorze" />
+    <Header title="About author" />
     <Section
       title="Karol Galera"
       body={
         <Content>
           <>
             <p>
-              <strong>Cześć jestem Karol 😁</strong> Mam 25 lat i pochodzę z Kielc.
-              Aktualnie życie ponisło mnie do Warszawy w której mieszkam już prawie 2 lata.
-              Udało mi się obronić licencjat z logistyki ale z biegiem czasu jednak stwierdziłem, że to nie to 😜.
+              <strong>Hello I'm Karol 😁</strong> I'm 25 years old and I come from Kielce.
+              Currently, my life has led me to Warsaw, where I have been living for almost 2 years.
+              I managed to defend my bachelor's degree in logistics, but with time it turned out that this is not what I want to do 😜.
             </p>
             <p>
-              Nadszedł, więc czas na zmiany i padło na <strong>PROGRAMOWANIE!!!</strong>💪.
-              Mam wielką nadzieję, że stanie się to nie tylko moją wielką pasją ale także środkiem utrzymania 😜.
+              The time has come for a change and it was <strong>programming!!!</strong>💪.
+              I sincerely hope that it will become not only my great passion but also my livelihood 😜.
             </p>
             <p>
-              Teraz troszkę o moich zainteresowaniach :D
-              Na podium bez wątpienia i nie zmiennie stoi <strong>MUZYKA</strong>🎵.
-              Nie wiem co by się stało, gdyby zabrakło jej w moim życiu i nie chce wiedzieć.
-              Poza tym do moich pasji należą też piłka nożna⚽, sztuki walki🥊 oraz podróżowanie gdziekolwiek i jakkolwiek się da 😁.
+              Well, now a little bit about my interests 😁.&nbsp;
+              <strong>Music</strong>🎵 is undoubtedly on the podium.
+              I don't know what would happen if it was missing from my life and I don't want to know.
+              Apart from that, my passions also include football⚽, martial arts🥊 and traveling wherever and however I can 😁.
             </p>
           </>
         </Content>

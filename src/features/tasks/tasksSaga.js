@@ -14,7 +14,7 @@ function* watchDownloadTasksHandler() {
     const exampleTasks = yield call(getExampleTasks);
     yield put(downloadTasksPending(exampleTasks));
   } catch (error) {
-    yield call(alert, "Upss... Coś poszło nie tak");
+    yield call(alert, "OOps... Something went wrong");
     yield put(downloadTasksError());
   }
 }
