@@ -14,7 +14,7 @@ https://galerafrontend.github.io/todos-list-react/
 Project is a simple example of to do list. It allows to create list of tasks and manipulated it freely. Project is easy and fun to use.
 ## How it works?
 1. Welcome on To Do List 😁. 
-To use the list of tasks, click Task list on the navigation bar, or if you are interested in the author, click About author.
+To use the list of tasks, click To-do list on the navigation bar, or if you are interested in the author, click About author.
 
 2. Enter any task in a text field and then press the add task button.
 As you can see the new task has been added to the list and the focus is automatically set in text field. You can also add exaple tasks, for this you need to press the "Download example tasks" button and wait a few seconds. The tasks will be downloaded and automatically placed on the task list.
