@@ -16,8 +16,7 @@ export const StyledNavLink = styled(NavLink)`
 
 export const NavList = styled.ul`
   background: ${({ theme }) => theme.color.teal};
-  display: grid;
-  grid-template-columns: auto auto auto;
+  display: flex;
   justify-content: center;
   align-items: center;
   list-style-type: none;
@@ -25,7 +24,7 @@ export const NavList = styled.ul`
   padding: 5px;
 
   @media(max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
-    grid-template-columns: auto;
+    flex-direction: column;
   }
 `;
 
