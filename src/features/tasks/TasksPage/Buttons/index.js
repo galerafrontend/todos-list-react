@@ -7,7 +7,8 @@ import {
 	selectHideDone,
 	selectAreTasksEmpty,
 	selectIsEveryTaskDone,
-	selectIsAnyTaskDone
+	selectIsAnyTaskDone,
+	removeAllTasks
 } from "../../tasksSlice";
 
 const Buttons = () => {
@@ -20,6 +21,9 @@ const Buttons = () => {
 		<ButtonsContainer>
 			{!areTasksEmpty && (
 				<>
+				<Button onClick={() => dispatch(removeAllTasks())}>
+					Remove all
+				</Button>
 					<Button
 						onClick={() => dispatch(toggleHideDone())}
 						disabled={isAnyTaskDone}
