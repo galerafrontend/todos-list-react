@@ -27,6 +27,9 @@ const tasksSlice = createSlice({
       const index = tasks.findIndex(({ id }) => id === taskId)
       tasks.splice(index, 1);
     },
+    removeAllTasks: ({ tasks }) => {
+      tasks = tasks.splice(0);
+    },
     downloadTasksError: state => {
       state.loading = false;
     },
@@ -46,6 +49,7 @@ export const {
   toggleTaskDone,
   markAllDone,
   removeTask,
+  removeAllTasks,
   downloadTasks,
   downloadTasksError,
   downloadTasksPending
@@ -72,5 +76,5 @@ export const selectTasksByQuery = (state, query) => {
 
   return tasks.filter(({ content }) => content.toUpperCase().includes(query.trim().toUpperCase()));
 };
-  
+
 export default tasksSlice.reducer;
