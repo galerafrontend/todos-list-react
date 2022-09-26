@@ -25,8 +25,8 @@ As you can see the new task has been added to the list and the focus is automati
 
 4. A completed task can also be completly removed from the list. To do this, press the red button with a wastebasket icon.
 
-5. You can use two special buttons as well. The first one turns on when at least one of the tasks has been completed, then the button can be used to hide or show completed tasks.
-The second, when clicked, sets all tasks as completed, then it is turned off until there is one incomplete task.
+5. You can use tree special buttons as well. The first one, when clicked, removes all tasks from list. The second one turns on when at least one of the tasks has been completed, then the button can be used to hide or show completed tasks.
+The third, when clicked, sets all tasks as completed, then it is turned off until there is one incomplete task.
 
 6. Use the search engine to filter your tasks. If necessary, just enter the beginning of the search phrase.
 
